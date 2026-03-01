@@ -1,0 +1,9 @@
+employee_id,employee_name,department,role,skills,project_ids
+E001,Asha,Data,Senior Architect,"Data Architecture, Azure, Python, Spark",P001;P002
+E002,Ravi,Data,Data Engineer,"Python, Spark, ETL",P001
+E003,Neha,AI,ML Engineer,"Python, PyTorch, MLOps",P002
+E004,Arjun,AI,Senior Architect,"System Design, Kubernetes, MLOps, Python",P002
+E005,Priya,HR,HR Analyst,"Workforce Planning, Excel, PowerBI",P003
+E006,Kiran,Data,Analyst,"SQL, Excel, PowerBI",P003
+E007,Sneha,AI,ML Engineer,"Python, TensorFlow, NLP",P002
+E008,Varun,Security,Security Engineer,"IAM, Zero Trust, Azure",P004

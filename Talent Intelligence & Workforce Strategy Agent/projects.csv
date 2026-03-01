@@ -1,0 +1,5 @@
+project_id,project_name,project_department,required_skills
+P001,Customer Data Platform,Data,"Python, Spark, Data Architecture, Azure"
+P002,AI Recommendation Engine,AI,"Python, MLOps, PyTorch, Kubernetes"
+P003,Workforce Analytics,HR,"Workforce Planning, PowerBI, Excel"
+P004,Cloud Access Hardening,Security,"IAM, Zero Trust, Azure"

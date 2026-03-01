@@ -1,0 +1,427 @@
+{
+  "run_id": "44544f80346e",
+  "saved_at_utc": "2026-02-28T22:50:58.634611+00:00",
+  "payload": {
+    "uploaded_files": {
+      "employees.csv": {
+        "size": 584
+      },
+      "projects.csv": {
+        "size": 334
+      },
+      "performance.csv": {
+        "size": 469
+      }
+    },
+    "question": "What happens if 2 senior architects leave?",
+    "neo4j_status": "Upserted 33 nodes and 71 edges into Neo4j.",
+    "employees": "  employee_id employee_name department               role                                    skills project_ids\n0        E001          Asha       Data   Senior Architect   Data Architecture, Azure, Python, Spark   P001;P002\n1        E002          Ravi       Data      Data Engineer                        Python, Spark, ETL        P001\n2        E003          Neha         AI        ML Engineer                    Python, PyTorch, MLOps        P002\n3        E004         Arjun         AI   Senior Architect  System Design, Kubernetes, MLOps, Python        P002\n4        E005         Priya         HR         HR Analyst        Workforce Planning, Excel, PowerBI        P003\n5        E006         Kiran       Data            Analyst                       SQL, Excel, PowerBI        P003\n6        E007         Sneha         AI        ML Engineer                   Python, TensorFlow, NLP        P002\n7        E008         Varun   Security  Security Engineer                    IAM, Zero Trust, Azure        P004",
+    "projects": "  project_id              project_name project_department                          required_skills\n0       P001    Customer Data Platform               Data  Python, Spark, Data Architecture, Azure\n1       P002  AI Recommendation Engine                 AI       Python, MLOps, PyTorch, Kubernetes\n2       P003       Workforce Analytics                 HR       Workforce Planning, PowerBI, Excel\n3       P004    Cloud Access Hardening           Security                   IAM, Zero Trust, Azure",
+    "performance": "  employee_id  performance_rating                                  performance_notes\n0        E001                 4.7     Consistent high-impact architecture leadership\n1        E002                 4.1              Strong delivery improve documentation\n2        E003                 4.3  Great modeling skills needs more stakeholder a...\n3        E004                 4.6        Leads platform reliability work effectively\n4        E005                 3.9                   Good insights improve automation\n5        E006                 3.7      Steady contributor upskill advanced analytics\n6        E007                 4.0           Good results improve experiment tracking\n7        E008                 4.2               Strong security posture improvements",
+    "graph": "MultiDiGraph with 33 nodes and 71 edges",
+    "skill_gaps": [],
+    "concentration_risks": [
+      {
+        "skill": "Data Architecture",
+        "employee_count": 1,
+        "by_department": {
+          "Data": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "ETL",
+        "employee_count": 1,
+        "by_department": {
+          "Data": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "PyTorch",
+        "employee_count": 1,
+        "by_department": {
+          "AI": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "System Design",
+        "employee_count": 1,
+        "by_department": {
+          "AI": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "Kubernetes",
+        "employee_count": 1,
+        "by_department": {
+          "AI": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "Workforce Planning",
+        "employee_count": 1,
+        "by_department": {
+          "HR": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "SQL",
+        "employee_count": 1,
+        "by_department": {
+          "Data": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "TensorFlow",
+        "employee_count": 1,
+        "by_department": {
+          "AI": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "NLP",
+        "employee_count": 1,
+        "by_department": {
+          "AI": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "IAM",
+        "employee_count": 1,
+        "by_department": {
+          "Security": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "Zero Trust",
+        "employee_count": 1,
+        "by_department": {
+          "Security": 1
+        },
+        "risk_level": "HIGH",
+        "single_team_only": true
+      },
+      {
+        "skill": "Azure",
+        "employee_count": 2,
+        "by_department": {
+          "Data": 1,
+          "Security": 1
+        },
+        "risk_level": "MEDIUM",
+        "single_team_only": false
+      },
+      {
+        "skill": "Spark",
+        "employee_count": 2,
+        "by_department": {
+          "Data": 2
+        },
+        "risk_level": "MEDIUM",
+        "single_team_only": true
+      },
+      {
+        "skill": "MLOps",
+        "employee_count": 2,
+        "by_department": {
+          "AI": 2
+        },
+        "risk_level": "MEDIUM",
+        "single_team_only": true
+      },
+      {
+        "skill": "Excel",
+        "employee_count": 2,
+        "by_department": {
+          "HR": 1,
+          "Data": 1
+        },
+        "risk_level": "MEDIUM",
+        "single_team_only": false
+      },
+      {
+        "skill": "PowerBI",
+        "employee_count": 2,
+        "by_department": {
+          "HR": 1,
+          "Data": 1
+        },
+        "risk_level": "MEDIUM",
+        "single_team_only": false
+      }
+    ],
+    "department_needs": [
+      {
+        "department": "Data",
+        "needs": [
+          {
+            "skill": "Python",
+            "demand": 1
+          },
+          {
+            "skill": "Spark",
+            "demand": 1
+          },
+          {
+            "skill": "Data Architecture",
+            "demand": 1
+          },
+          {
+            "skill": "Azure",
+            "demand": 1
+          }
+        ]
+      },
+      {
+        "department": "AI",
+        "needs": [
+          {
+            "skill": "Python",
+            "demand": 1
+          },
+          {
+            "skill": "MLOps",
+            "demand": 1
+          },
+          {
+            "skill": "PyTorch",
+            "demand": 1
+          },
+          {
+            "skill": "Kubernetes",
+            "demand": 1
+          }
+        ]
+      },
+      {
+        "department": "HR",
+        "needs": [
+          {
+            "skill": "Workforce Planning",
+            "demand": 1
+          },
+          {
+            "skill": "PowerBI",
+            "demand": 1
+          },
+          {
+            "skill": "Excel",
+            "demand": 1
+          }
+        ]
+      },
+      {
+        "department": "Security",
+        "needs": [
+          {
+            "skill": "IAM",
+            "demand": 1
+          },
+          {
+            "skill": "Zero Trust",
+            "demand": 1
+          },
+          {
+            "skill": "Azure",
+            "demand": 1
+          }
+        ]
+      }
+    ],
+    "risk_score": {
+      "score": 38,
+      "level": "CRITICAL",
+      "resilience_index": 0
+    },
+    "simulation": {
+      "removed_employees": [
+        "emp:E001",
+        "emp:E004"
+      ],
+      "impacted_projects": []
+    },
+    "recommendations": {
+      "priority_skills": [
+        {
+          "skill": "Data Architecture",
+          "score": 3
+        },
+        {
+          "skill": "ETL",
+          "score": 3
+        },
+        {
+          "skill": "PyTorch",
+          "score": 3
+        },
+        {
+          "skill": "System Design",
+          "score": 3
+        },
+        {
+          "skill": "Kubernetes",
+          "score": 3
+        },
+        {
+          "skill": "Workforce Planning",
+          "score": 3
+        },
+        {
+          "skill": "SQL",
+          "score": 3
+        },
+        {
+          "skill": "TensorFlow",
+          "score": 3
+        },
+        {
+          "skill": "NLP",
+          "score": 3
+        },
+        {
+          "skill": "IAM",
+          "score": 3
+        },
+        {
+          "skill": "Zero Trust",
+          "score": 3
+        },
+        {
+          "skill": "Azure",
+          "score": 1
+        },
+        {
+          "skill": "Spark",
+          "score": 1
+        },
+        {
+          "skill": "MLOps",
+          "score": 1
+        },
+        {
+          "skill": "Excel",
+          "score": 1
+        },
+        {
+          "skill": "PowerBI",
+          "score": 1
+        }
+      ],
+      "hiring_plan": [
+        {
+          "skill": "Data Architecture",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "ETL",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "PyTorch",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "System Design",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "Kubernetes",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "Workforce Planning",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "SQL",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "TensorFlow",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "NLP",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "IAM",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        },
+        {
+          "skill": "Zero Trust",
+          "priority_score": 3,
+          "reason": "Critical gap / high concentration risk"
+        }
+      ],
+      "reskilling_plan": [
+        {
+          "skill": "Azure",
+          "priority_score": 1,
+          "reason": "Reskill internal staff (targeted upskilling)"
+        },
+        {
+          "skill": "Spark",
+          "priority_score": 1,
+          "reason": "Reskill internal staff (targeted upskilling)"
+        },
+        {
+          "skill": "MLOps",
+          "priority_score": 1,
+          "reason": "Reskill internal staff (targeted upskilling)"
+        },
+        {
+          "skill": "Excel",
+          "priority_score": 1,
+          "reason": "Reskill internal staff (targeted upskilling)"
+        },
+        {
+          "skill": "PowerBI",
+          "priority_score": 1,
+          "reason": "Reskill internal staff (targeted upskilling)"
+        }
+      ],
+      "executive_summary": "**Executive Action Plan**\n\n**Hiring Priorities:**\n\n1. **Data Architecture**: Hire at least 2 new employees with expertise in Data Architecture to reduce the single-team-only risk.\n2. **ETL**: Recruit an additional ETL expert to support data integration and reduce the single-team-only risk.\n3. **AI/ML Skills**: Focus on hiring AI/ML experts with skills in PyTorch, System Design, Kubernetes, and TensorFlow to strengthen the AI team.\n\n**Reskilling Plan:**\n\n1. **Upskill Current Employees**: Provide training and upskilling opportunities for existing employees in Data Architecture, ETL, and AI/ML skills.\n2. **Cross-Training**: Offer cross-training programs to enable employees from other departments (e.g., HR) to develop skills in Workforce Planning.\n\n**Risk Mitigation Steps:**\n\n1. **Diversify Expertise**: Ensure that new hires are not concentrated in a single team or department, reducing the risk of single-team-only dependencies.\n2. **Develop Contingency Plans**: Create contingency plans for critical projects and processes, ensuring minimal disruption in case of employee departures.\n3. **Monitor Progress**: Regularly monitor the progress of reskilling initiatives and hiring efforts to ensure that the organization is moving towards a more resilient workforce.\n\n**Additional Recommendations:**\n\n1. **Conduct a Comprehensive Skills Audit**: Perform a thorough skills audit to identify additional gaps and areas for improvement.\n2. **Develop a Talent Pipeline**: Establish a talent pipeline program to attract, develop, and retain top talent in critical skill areas.\n3. **Enhance Employee Retention Strategies**: Implement strategies to improve employee retention, reducing the risk of losing valuable employees.\n\n**Next Steps:**\n\n1. Review and refine the hiring priorities, reskilling plan, and risk mitigation steps with relevant stakeholders.\n2. Develop a detailed project plan and timeline for implementing these recommendations.\n3. Monitor progress and adjust the plan as needed to ensure successful execution.",
+      "llm_meta": {
+        "provider": "ollama",
+        "model": "llama3",
+        "reachable": true
+      }
+    },
+    "report_markdown": "# Board-Ready Workforce Strategy Report\n\n## Executive Summary\n- Workforce Risk Level: **CRITICAL** (score=38, resilience=0 )\n- Projects with Skill Gaps: **0**\n- Concentration Risks: **16**\n- Attrition Simulation Impacted Projects: **0**\n\n## Top Skill Gaps (sample)\n\n## Top Concentration Risks (sample)\n- **Data Architecture**: holders=1 risk=HIGH single_team_only=True\n- **ETL**: holders=1 risk=HIGH single_team_only=True\n- **PyTorch**: holders=1 risk=HIGH single_team_only=True\n- **System Design**: holders=1 risk=HIGH single_team_only=True\n- **Kubernetes**: holders=1 risk=HIGH single_team_only=True\n- **Workforce Planning**: holders=1 risk=HIGH single_team_only=True\n- **SQL**: holders=1 risk=HIGH single_team_only=True\n- **TensorFlow**: holders=1 risk=HIGH single_team_only=True\n- **NLP**: holders=1 risk=HIGH single_team_only=True\n- **IAM**: holders=1 risk=HIGH single_team_only=True\n\n## Attrition Simulation\n- Removed employees: ['emp:E001', 'emp:E004']\n- Impacted projects: []\n\n## Recommendations\n### Hiring priorities (Top 10)\n- Hire for **Data Architecture** (score=3): Critical gap / high concentration risk\n- Hire for **ETL** (score=3): Critical gap / high concentration risk\n- Hire for **PyTorch** (score=3): Critical gap / high concentration risk\n- Hire for **System Design** (score=3): Critical gap / high concentration risk\n- Hire for **Kubernetes** (score=3): Critical gap / high concentration risk\n- Hire for **Workforce Planning** (score=3): Critical gap / high concentration risk\n- Hire for **SQL** (score=3): Critical gap / high concentration risk\n- Hire for **TensorFlow** (score=3): Critical gap / high concentration risk\n- Hire for **NLP** (score=3): Critical gap / high concentration risk\n- Hire for **IAM** (score=3): Critical gap / high concentration risk\n\n### Reskilling priorities (Top 10)\n- Reskill into **Azure** (score=1): Reskill internal staff (targeted upskilling)\n- Reskill into **Spark** (score=1): Reskill internal staff (targeted upskilling)\n- Reskill into **MLOps** (score=1): Reskill internal staff (targeted upskilling)\n- Reskill into **Excel** (score=1): Reskill internal staff (targeted upskilling)\n- Reskill into **PowerBI** (score=1): Reskill internal staff (targeted upskilling)\n\n### Executive narrative (LLM)\n**Executive Action Plan**\n\n**Hiring Priorities:**\n\n1. **Data Architecture**: Hire at least 2 new employees with expertise in Data Architecture to reduce the single-team-only risk.\n2. **ETL**: Recruit an additional ETL expert to support data integration and reduce the single-team-only risk.\n3. **AI/ML Skills**: Focus on hiring AI/ML experts with skills in PyTorch, System Design, Kubernetes, and TensorFlow to strengthen the AI team.\n\n**Reskilling Plan:**\n\n1. **Upskill Current Employees**: Provide training and upskilling opportunities for existing employees in Data Architecture, ETL, and AI/ML skills.\n2. **Cross-Training**: Offer cross-training programs to enable employees from other departments (e.g., HR) to develop skills in Workforce Planning.\n\n**Risk Mitigation Steps:**\n\n1. **Diversify Expertise**: Ensure that new hires are not concentrated in a single team or department, reducing the risk of single-team-only dependencies.\n2. **Develop Contingency Plans**: Create contingency plans for critical projects and processes, ensuring minimal disruption in case of employee departures.\n3. **Monitor Progress**: Regularly monitor the progress of reskilling initiatives and hiring efforts to ensure that the organization is moving towards a more resilient workforce.\n\n**Additional Recommendations:**\n\n1. **Conduct a Comprehensive Skills Audit**: Perform a thorough skills audit to identify additional gaps and areas for improvement.\n2. **Develop a Talent Pipeline**: Establish a talent pipeline program to attract, develop, and retain top talent in critical skill areas.\n3. **Enhance Employee Retention Strategies**: Implement strategies to improve employee retention, reducing the risk of losing valuable employees.\n\n**Next Steps:**\n\n1. Review and refine the hiring priorities, reskilling plan, and risk mitigation steps with relevant stakeholders.\n2. Develop a detailed project plan and timeline for implementing these recommendations.\n3. Monitor progress and adjust the plan as needed to ensure successful execution.",
+    "report_pdf_path": "C:\\Users\\vaish\\Documents\\Talent Intelligence & Workforce Strategy Agent\\workforce_strategy_report.pdf",
+    "rag_context": "GRAPH CONTEXT (nodes):\n- emp:E003 | type=Employee | name=Neha\n- skill:Kubernetes | type=Skill | name=Kubernetes\n- dept:Data | type=Department | name=Data\n- skill:PyTorch | type=Skill | name=PyTorch\n- skill:Spark | type=Skill | name=Spark\n- skill:ETL | type=Skill | name=ETL\n- proj:P001 | type=Project | name=P001\n- skill:MLOps | type=Skill | name=MLOps\n- emp:E007 | type=Employee | name=Sneha\n- skill:Python | type=Skill | name=Python\n- proj:P002 | type=Project | name=P002\n- emp:E001 | type=Employee | name=Asha\n- emp:E004 | type=Employee | name=Arjun\n- emp:E002 | type=Employee | name=Ravi\n\nGRAPH CONTEXT (edges):\n- dept:Data -[NEEDS]-> skill:Python | props={'demand': 1}\n- dept:Data -[NEEDS]-> skill:Spark | props={'demand': 1}\n- proj:P001 -[REQUIRES]-> skill:Python | props={}\n- proj:P001 -[REQUIRES]-> skill:Spark | props={}\n- proj:P002 -[REQUIRES]-> skill:Python | props={}\n- proj:P002 -[REQUIRES]-> skill:MLOps | props={}\n- proj:P002 -[REQUIRES]-> skill:PyTorch | props={}\n- proj:P002 -[REQUIRES]-> skill:Kubernetes | props={}\n- emp:E001 -[BELONGS_TO]-> dept:Data | props={}\n- emp:E001 -[HAS_SKILL]-> skill:Python | props={}\n- emp:E001 -[HAS_SKILL]-> skill:Spark | props={}\n- emp:E001 -[WORKS_ON]-> proj:P001 | props={}\n- emp:E001 -[WORKS_ON]-> proj:P002 | props={}\n- emp:E002 -[BELONGS_TO]-> dept:Data | props={}\n- emp:E002 -[HAS_SKILL]-> skill:Python | props={}\n- emp:E002 -[HAS_SKILL]-> skill:Spark | props={}\n- emp:E002 -[HAS_SKILL]-> skill:ETL | props={}\n- emp:E002 -[WORKS_ON]-> proj:P001 | props={}\n- emp:E003 -[HAS_SKILL]-> skill:Python | props={}\n- emp:E003 -[HAS_SKILL]-> skill:PyTorch | props={}\n- emp:E003 -[HAS_SKILL]-> skill:MLOps | props={}\n- emp:E003 -[WORKS_ON]-> proj:P002 | props={}\n- emp:E004 -[HAS_SKILL]-> skill:Kubernetes | props={}\n- emp:E004 -[HAS_SKILL]-> skill:MLOps | props={}\n- emp:E004 -[HAS_SKILL]-> skill:Python | props={}\n- emp:E004 -[WORKS_ON]-> proj:P002 | props={}\n- emp:E007 -[HAS_SKILL]-> skill:Python | props={}\n- emp:E007 -[WORKS_ON]-> proj:P002 | props={}",
+    "answer": "**Risk:** If two senior architects (E001 and E004) were to leave, the organization would face a significant loss of expertise in areas such as Kubernetes, MLOps, and Python. This could impact project P002, which relies heavily on these skills.\n\n**Mitigation Steps:**\n\n1. **Identify Critical Skills:** Determine the critical skills required for project P002, such as Kubernetes, MLOps, and Python.\n2. **Upskill Existing Employees:** Identify employees with existing skills in these areas (e.g., E003) and provide training or mentorship to ensure they can take on more senior roles.\n3. **Recruit New Talent:** Actively recruit new talent with the required skills to fill the gaps left by departing architects.\n4. **Develop Succession Plans:** Develop succession plans for key roles, including a plan for transferring knowledge and responsibilities to other employees.\n5. **Monitor Project Progress:** Closely monitor project P002's progress and adjust resource allocation as needed to ensure its successful completion.\n\nBy taking these steps, the organization can minimize the impact of losing two senior architects and maintain project momentum.",
+    "simulate_role": "Senior Architect",
+    "simulate_count": 2
+  }
+}
